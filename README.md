@@ -1,1 +1,1 @@
-# grafkommm
+# GrafikaKomputer
