@@ -15,31 +15,138 @@
           rotation="0 180 0"
         ></a-entity>
 
-        <!-- Card teks (kotak merah) di depan model -->
-        <a-plane
-          position="0 0.4 0.6"
-          width="1.2"
-          height="0.4"
-          color="#ff0000"
-          opacity="0.9"
-        ></a-plane>
+        <!-- Background hitam dengan sudut agak bulat -->
+        <a-rounded
+          position="0 1.05 0.59"
+          width="1.6"
+          height="2.4"
+          color="#000000"
+          radius="0.05"
+          opacity="0.85"
+        ></a-rounded>
 
-        <!-- Teks di atas plane -->
+        <!-- Teks pecahan -->
         <a-text
-          value="Nabi Ibrahim a.s.\nNabi Ibrahim lahir di Babilonia, Irak, di tengah masyarakat yang menyembah berhala, bintang, matahari, dan bulan. Ayahnya, Azar, adalah pembuat patung berhala. Sejak kecil, Ibrahim memiliki pemikiran kritis. Ia mempertanyakan ketuhanan benda-benda langit dan menolak untuk menyembah berhala.
-Ketika dewasa, ia mulai berdakwah dan menentang praktik penyembahan berhala. Ia bahkan menghancurkan patung-patung yang disembah kaumnya dan meninggalkan satu patung besar untuk memancing pertanyaan mereka. Ketika ditanya, ia mengatakan bahwa patung besar itulah yang menghancurkan patung lain, sebagai sindiran akan kebodohan mereka.
-Raja Namrud, yang merasa terancam oleh dakwah Ibrahim, memerintahkan agar ia dibakar hidup-hidup. Namun, saat Ibrahim dilemparkan ke dalam kobaran api yang besar, Allah menunjukkan mukjizat-Nya dengan menjadikan api itu dingin dan tidak membakar tubuh Ibrahim.
-Nabi Ibrahim juga diuji dengan perintah menyembelih putranya, Ismail. Ketika ia hendak melaksanakan perintah itu sebagai bentuk ketaatan total, Allah menggantinya dengan seekor domba. Peristiwa ini menjadi dasar ibadah kurban dalam Islam.
-Ibrahim juga dikenal sebagai pendiri Kabah di Mekah bersama Ismail, dan ia disebut sebagai bapak para nabi karena dari keturunannya lahir nabi-nabi besar seperti Ishaq, Ya'qub, Musa, Isa, dan Muhammad. Nabi Ibrahim wafat dalam usia tua setelah menjalani hidup yang penuh ujian dan pengabdian.
-"
+          value="Nabi Ibrahim a.s."
+          align="center"
+          color="#ffffff"
+          position="0 1.7 0.61"
+          scale="0.4 0.4 0.4"
+        ></a-text>
+        <a-text
+          value="Salah satu Nabi Ulul Azmi."
+          align="center"
+          color="#ffffff"
+          position="0 1.6 0.61"
+          scale="0.3 0.3 0.3"
+        ></a-text>
+        <a-text
+          value="Lahir di Babilonia, Irak. Masyarakat saat itu menyembah berhala."
+          align="center"
+          color="#ffffff"
+          position="0 1.5 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Ayahnya Azar adalah pembuat patung. Ibrahim sejak kecil kritis."
+          align="center"
+          color="#ffffff"
+          position="0 1.4 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Ia menolak menyembah benda langit dan berhala."
+          align="center"
+          color="#ffffff"
+          position="0 1.3 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Ia menghancurkan berhala kaumnya, menyisakan satu patung besar."
+          align="center"
+          color="#ffffff"
+          position="0 1.2 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Ketika ditanya, ia menjawab patung besar itulah pelakunya."
+          align="center"
+          color="#ffffff"
+          position="0 1.1 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Raja Namrud memerintahkan Ibrahim dibakar."
+          align="center"
+          color="#ffffff"
+          position="0 1.0 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Namun api menjadi dingin atas izin Allah, dan Ibrahim selamat."
+          align="center"
+          color="#ffffff"
+          position="0 0.9 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Ia juga diuji untuk menyembelih putranya, Ismail."
+          align="center"
+          color="#ffffff"
+          position="0 0.8 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Allah menggantinya dengan domba. Ini asal ibadah kurban."
+          align="center"
+          color="#ffffff"
+          position="0 0.7 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Ia dan Ismail membangun Ka'bah di Mekah."
+          align="center"
+          color="#ffffff"
+          position="0 0.6 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Dikenal sebagai bapak para nabi: Ishaq, Musa, Isa, Muhammad."
+          align="center"
+          color="#ffffff"
+          position="0 0.5 0.61"
+          scale="0.25 0.25 0.25"
+        ></a-text>
+        <a-text
+          value="Wafat dalam usia tua, penuh ujian dan ketaatan."
           align="center"
           color="#ffffff"
           position="0 0.4 0.61"
-          scale="0.4 0.4 0.4"
+          scale="0.25 0.25 0.25"
         ></a-text>
       </a-marker>
 
       <a-entity camera></a-entity>
     </a-scene>
+
+    <!-- Komponen untuk a-rounded (sudut bulat) -->
+    <script>
+      AFRAME.registerPrimitive("a-rounded", {
+        defaultComponents: {
+          geometry: {
+            primitive: "plane",
+            height: 1,
+            width: 1,
+          },
+          material: { color: "#000", shader: "flat" },
+        },
+        mappings: {
+          height: "geometry.height",
+          width: "geometry.width",
+          color: "material.color",
+          radius: "geometry.buffer",
+        },
+      });
+    </script>
   </body>
 </html>
