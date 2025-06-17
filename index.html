@@ -15,17 +15,19 @@
           rotation="0 180 0"
         ></a-entity>
 
-        <!-- Background hitam dengan sudut agak bulat -->
-        <a-rounded
+        <!-- Background hitam berbentuk kotak dengan ujung agak bulat -->
+        <a-plane
           position="0 1.05 0.59"
-          width="1.6"
-          height="2.4"
+          width="1.8"
+          height="1.8"
           color="#000000"
-          radius="0.05"
           opacity="0.85"
-        ></a-rounded>
+          material="shader: flat"
+          geometry="primitive: plane"
+          radius="0.05"
+        ></a-plane>
 
-        <!-- Teks pecahan -->
+        <!-- Teks narasi -->
         <a-text
           value="Nabi Ibrahim a.s."
           align="center"
@@ -128,25 +130,5 @@
 
       <a-entity camera></a-entity>
     </a-scene>
-
-    <!-- Komponen untuk a-rounded (sudut bulat) -->
-    <script>
-      AFRAME.registerPrimitive("a-rounded", {
-        defaultComponents: {
-          geometry: {
-            primitive: "plane",
-            height: 1,
-            width: 1,
-          },
-          material: { color: "#000", shader: "flat" },
-        },
-        mappings: {
-          height: "geometry.height",
-          width: "geometry.width",
-          color: "material.color",
-          radius: "geometry.buffer",
-        },
-      });
-    </script>
   </body>
 </html>
