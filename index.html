@@ -7,124 +7,42 @@
   <body style="margin: 0; overflow: hidden">
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
       <a-marker type="pattern" url="pattern-kapallau.patt">
-        <!-- Model 3D -->
+        <!-- Model 3D diperbesar dan dinaikkan -->
         <a-entity
           gltf-model="url(paper_fire.glb)"
-          scale="0.3 0.3 0.3"
-          position="0 0.5 0"
+          scale="0.6 0.6 0.6"
+          position="0 0.9 0"
           rotation="0 180 0"
         ></a-entity>
 
-        <!-- Background hitam berbentuk kotak dengan ujung agak bulat -->
+        <!-- Background kotak teks -->
         <a-plane
-          position="0 1.05 0.59"
-          width="1.8"
-          height="1.8"
+          position="0 1.55 0.59"
+          width="2.2"
+          height="2.4"
           color="#000000"
           opacity="0.85"
           material="shader: flat"
-          geometry="primitive: plane"
-          radius="0.05"
         ></a-plane>
 
-        <!-- Teks narasi -->
+        <!-- Judul tetap center -->
         <a-text
           value="Nabi Ibrahim a.s."
           align="center"
           color="#ffffff"
-          position="0 1.7 0.61"
+          position="0 2.6 0.61"
           scale="0.4 0.4 0.4"
         ></a-text>
+
+        <!-- Paragraf deskripsi dengan rata kanan-kiri -->
         <a-text
-          value="Salah satu Nabi Ulul Azmi."
-          align="center"
-          color="#ffffff"
-          position="0 1.6 0.61"
-          scale="0.3 0.3 0.3"
-        ></a-text>
-        <a-text
-          value="Lahir di Babilonia, Irak. Masyarakat saat itu menyembah berhala."
-          align="center"
-          color="#ffffff"
-          position="0 1.5 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Ayahnya Azar adalah pembuat patung. Ibrahim sejak kecil kritis."
-          align="center"
+          value="Salah satu Nabi Ulul Azmi. Lahir di Babilonia, Irak. Masyarakat saat itu menyembah berhala. Ayahnya Azar adalah pembuat patung. Ibrahim sejak kecil kritis. Ia menolak menyembah benda langit dan berhala. Ia menghancurkan berhala kaumnya, menyisakan satu patung besar. Ketika ditanya, ia menjawab patung besar itulah pelakunya. Raja Namrud memerintahkan Ibrahim dibakar. Namun api menjadi dingin atas izin Allah, dan Ibrahim selamat. Ia juga diuji untuk menyembelih putranya, Ismail. Allah menggantinya dengan domba. Ini asal ibadah kurban. Ia dan Ismail membangun Ka'bah di Mekah. Dikenal sebagai bapak para nabi: Ishaq, Musa, Isa, Muhammad. Wafat dalam usia tua, penuh ujian dan ketaatan."
+          align="justify"
           color="#ffffff"
           position="0 1.4 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Ia menolak menyembah benda langit dan berhala."
-          align="center"
-          color="#ffffff"
-          position="0 1.3 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Ia menghancurkan berhala kaumnya, menyisakan satu patung besar."
-          align="center"
-          color="#ffffff"
-          position="0 1.2 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Ketika ditanya, ia menjawab patung besar itulah pelakunya."
-          align="center"
-          color="#ffffff"
-          position="0 1.1 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Raja Namrud memerintahkan Ibrahim dibakar."
-          align="center"
-          color="#ffffff"
-          position="0 1.0 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Namun api menjadi dingin atas izin Allah, dan Ibrahim selamat."
-          align="center"
-          color="#ffffff"
-          position="0 0.9 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Ia juga diuji untuk menyembelih putranya, Ismail."
-          align="center"
-          color="#ffffff"
-          position="0 0.8 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Allah menggantinya dengan domba. Ini asal ibadah kurban."
-          align="center"
-          color="#ffffff"
-          position="0 0.7 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Ia dan Ismail membangun Ka'bah di Mekah."
-          align="center"
-          color="#ffffff"
-          position="0 0.6 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Dikenal sebagai bapak para nabi: Ishaq, Musa, Isa, Muhammad."
-          align="center"
-          color="#ffffff"
-          position="0 0.5 0.61"
-          scale="0.25 0.25 0.25"
-        ></a-text>
-        <a-text
-          value="Wafat dalam usia tua, penuh ujian dan ketaatan."
-          align="center"
-          color="#ffffff"
-          position="0 0.4 0.61"
-          scale="0.25 0.25 0.25"
+          scale="0.27 0.27 0.27"
+          width="1.9"
+          wrap-count="60"
         ></a-text>
       </a-marker>
 
